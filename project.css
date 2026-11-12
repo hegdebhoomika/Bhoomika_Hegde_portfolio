@@ -1,0 +1,52 @@
+/* Individual project case-study pages */
+.case-page{background:var(--paper);min-height:100vh}
+.case-top{padding:34px var(--gutter) 26px;border-bottom:1px solid var(--line)}
+.case-back{font:10px var(--mono);letter-spacing:.08em;color:var(--accent)}
+.case-hero{padding:76px var(--gutter) 58px;max-width:1500px;margin:auto}
+.case-hero .case-category{font:10px var(--mono);letter-spacing:.1em;color:var(--accent);margin:0 0 22px;text-transform:uppercase}
+.case-hero h1{font-size:clamp(48px,8vw,112px);line-height:.92;letter-spacing:-.075em;font-weight:500;max-width:1050px;margin:0 0 25px}
+.case-hero .case-summary{font-size:clamp(17px,2vw,22px);line-height:1.5;color:#4f5b66;max-width:680px;margin:0}
+.case-hero .case-tags{font:9px var(--mono);letter-spacing:.08em;color:#687783;margin-top:28px}
+.case-cover{margin:0 var(--gutter) 70px;min-height:320px;background:#e8edf0;border-radius:7px;display:flex;align-items:center;justify-content:center;text-align:center;padding:28px;color:#66727c;font:10px/1.7 var(--mono);letter-spacing:.1em}
+.case-content{max-width:1120px;margin:0 auto;padding:0 var(--gutter) 90px}
+.case-section{display:grid;grid-template-columns:.55fr 1.45fr;gap:5vw;padding:32px 0;border-top:1px solid var(--line)}
+.case-section .case-label{font:10px var(--mono);letter-spacing:.08em;color:var(--accent);text-transform:uppercase}
+.case-section h2{font-size:clamp(27px,3.5vw,42px);font-weight:500;letter-spacing:-.06em;margin:0 0 16px}
+.case-section p{font-size:15px;line-height:1.75;color:#4f5b66;margin:0 0 14px;max-width:720px}
+.case-prompt{background:var(--soft);padding:20px 22px;border-radius:5px;color:#53616c;font-size:13px;line-height:1.65}
+.case-cta{display:inline-flex;margin-top:18px;padding:13px 19px;border-radius:30px;background:#171819;color:white;font-size:11px}
+.case-footer{padding:24px var(--gutter);background:#171819;color:white;display:flex;justify-content:space-between;font:9px var(--mono);letter-spacing:.08em}
+@media(max-width:650px){.case-hero{padding-top:48px}.case-cover{min-height:210px;margin-bottom:40px}.case-section{grid-template-columns:1fr;gap:12px}.case-footer{gap:12px;flex-direction:column}}
+
+/* Tall PDF documentation rendered as proportion-preserving image slices */
+.pdf-image-pages{display:flex;flex-direction:column;gap:18px}
+.pdf-image-page{margin:0 auto;width:100%;max-width:1000px;background:#fff;box-shadow:0 8px 28px rgba(24,29,20,.08);line-height:0}
+.pdf-image-page img{display:block;width:100%;height:auto}
+.pdf-unavailable .pdf-error{max-width:900px}
+.pdf-project-actions a{white-space:nowrap}
+.case-footer .case-behance{margin-left:auto;margin-right:24px}
+@media(max-width:700px){.pdf-image-pages{gap:10px}.case-footer .case-behance{margin:0}}
+
+/* Project page prototype and Behance links */
+.project-link-actions {
+  display:flex; flex-wrap:wrap; gap:18px; margin:22px 0 28px;
+}
+.project-link-actions .project-action-link {
+  font:10px 'IBM Plex Mono',monospace; letter-spacing:.08em;
+  color:#75162c; text-decoration:none; border-bottom:1px solid #75162c;
+  padding-bottom:6px;
+}
+.case-hero {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 35px 5vw;
+    box-sizing: border-box;
+}
+
+.case-hero .case-summary {
+    width: 100%;
+    max-width: none;
+    font-size: 20px;
+    line-height: 1.6;
+}

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="Kisan MR — Phase 2 — project by Bhoomika Hegde." name="description" />
+  <title>Kisan MR — Phase 2 — Bhoomika Hegde</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap"
+    rel="stylesheet" />
+  <link href="../../style.css" rel="stylesheet" />
+  <link href="../../project.css" rel="stylesheet" />
+  <style>
+    .project-story {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 5vw 100px;
+      color: var(--ink)
+    }
+
+    .project-story .story-intro {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 7vw;
+      align-items: end;
+      padding: 58px 0 64px;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .project-story .story-intro h2 {
+      font-size: clamp(30px, 4vw, 54px);
+      line-height: 1.04;
+      letter-spacing: -.055em;
+      font-weight: 500;
+      margin: 0;
+      max-width: 700px
+    }
+
+    .project-story .story-intro p {
+      font-size: 15px;
+      line-height: 1.75;
+      color: #555850;
+      margin: 0;
+      max-width: 440px
+    }
+
+    .project-story .story-kicker {
+      font: 10px 'IBM Plex Mono', monospace;
+      letter-spacing: .12em;
+      color: #7b806d;
+      text-transform: uppercase;
+      margin-bottom: 18px
+    }
+
+    .project-story .story-gallery {
+      padding-top: 50px
+    }
+
+    .project-story .story-gallery figure {
+      margin: 0 auto 28px;
+      max-width: 1000px
+    }
+
+    .project-story .story-gallery img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      background: #e9e7df
+    }
+
+    .project-story .story-gallery figcaption {
+      font: 10px 'IBM Plex Mono', monospace;
+      color: #777;
+      margin-top: 9px;
+      letter-spacing: .05em
+    }
+
+    .project-story .story-gallery.grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      align-items: start
+    }
+
+    .project-story .story-gallery.grid figure {
+      margin: 0;
+      width: 100%
+    }
+
+    .project-story .story-note {
+      margin: 46px 0;
+      padding: 28px 32px;
+      background: #e9eee2;
+      border-left: 3px solid #8fa37b;
+      font-size: 15px;
+      line-height: 1.7
+    }
+
+    .project-story .story-footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding-top: 30px;
+      border-top: 1px solid var(--line);
+      font: 10px 'IBM Plex Mono', monospace;
+      letter-spacing: .08em
+    }
+
+    .project-story .story-footer a {
+      color: #75162c
+    }
+
+    @media(max-width:700px) {
+      .project-story .story-intro {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 38px 0
+      }
+
+      .project-story .story-gallery.grid {
+        grid-template-columns: 1fr
+      }
+
+      .project-story {
+        padding-bottom: 60px
+      }
+    }
+
+    .project-story .upload-slot {
+      margin: 0 auto 30px;
+      max-width: 1000px
+    }
+
+    .project-story .upload-slot img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      background: #efefe5
+    }
+
+    .project-story .upload-slot figcaption {
+      font: 10px 'IBM Plex Mono', monospace;
+      color: #777;
+      margin-top: 9px;
+      letter-spacing: .05em
+    }
+
+    .pdf-project {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 52px 5vw 100px;
+      color: var(--ink)
+    }
+
+    .pdf-project-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 24px;
+      margin-bottom: 22px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .pdf-project-head .story-kicker {
+      font: 10px 'IBM Plex Mono', monospace;
+      letter-spacing: .12em;
+      color: #7b806d;
+      text-transform: uppercase
+    }
+
+    .pdf-project-head h2 {
+      font-size: clamp(22px, 3vw, 34px);
+      font-weight: 500;
+      letter-spacing: -.04em;
+      margin: 8px 0 0
+    }
+
+    .pdf-project-actions {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      flex-wrap: wrap
+    }
+
+    .pdf-project-actions a {
+      font: 10px 'IBM Plex Mono', monospace;
+      letter-spacing: .08em;
+      color: #75162c;
+      text-decoration: none;
+      border-bottom: 1px solid #75162c;
+      padding-bottom: 6px
+    }
+
+    .pdf-pages {
+      display: flex;
+      flex-direction: column;
+      gap: 18px
+    }
+
+    .pdf-page {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1000px;
+      background: #fff;
+      box-shadow: 0 8px 28px rgba(24, 29, 20, .08);
+      line-height: 0
+    }
+
+    .pdf-page canvas {
+      display: block;
+      width: 100%;
+      height: auto
+    }
+
+    .pdf-loading {
+      padding: 44px 20px;
+      text-align: center;
+      background: #efefe8;
+      color: #666;
+      font: 11px 'IBM Plex Mono', monospace;
+      letter-spacing: .04em
+    }
+
+    .pdf-error {
+      padding: 30px;
+      background: #f5e9e7;
+      color: #75162c;
+      font-size: 14px;
+      line-height: 1.6
+    }
+
+    .pdf-note {
+      margin-top: 14px;
+      color: #777;
+      font: 10px 'IBM Plex Mono', monospace;
+      line-height: 1.6
+    }
+
+    @media(max-width:700px) {
+      .pdf-project {
+        padding: 34px 5vw 60px
+      }
+
+      .pdf-project-head {
+        align-items: flex-start;
+        flex-direction: column
+      }
+
+      .pdf-pages {
+        gap: 10px
+      }
+    }
+  </style>
+  <style id="portfolio-project-actions-fix">
+    .pdf-project-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .pdf-project-head>div:first-child {
+      flex: 1 1 240px;
+    }
+
+    .pdf-project-head .pdf-project-actions {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 18px;
+      flex: 0 1 auto;
+      flex-wrap: wrap;
+      margin-left: auto;
+    }
+
+    .pdf-project-head .pdf-project-actions a {
+      white-space: nowrap;
+      display: inline-block;
+    }
+
+    @media(max-width:700px) {
+      .pdf-project-head {
+        align-items: flex-start;
+      }
+
+      .pdf-project-head .pdf-project-actions {
+        justify-content: flex-start;
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+
+<body class="case-page">
+  <header class="topbar"><a class="brand" href="../../index.html"><span class="brand-mark"></span><span>Bhoomika
+        Hegde</span></a>
+    <nav aria-label="Project navigation" class="nav"><a href="../../index.html#work">Work</a><a
+        href="../../index.html#about">About</a><a class="nav-contact" href="../../index.html#contact">Contact</a></nav>
+  </header>
+  <main>
+    <div class="case-top"><a class="case-back" href="../../index.html#work">← BACK TO SELECTED WORK</a></div>
+
+<section class="case-hero">
+    <p class="story-kicker">PROJECT OVERVIEW</p>
+
+    <p class="case-summary">
+        Building on the research from Phase 1, this phase explores the use of Mixed Reality to create an immersive agricultural learning experience. The project focuses on helping farmers understand crop diseases through their symptoms, possible causes and appropriate management practices, encouraging informed decision-making through interactive learning.
+    </p>
+</section>
+    <section class="pdf-project" data-pdf-url="../../assets/documents/kisan-mr-mtp-phase-2.pdf">
+      <div class="pdf-project-head">
+        <div>
+          <div class="story-kicker">PROJECT DOCUMENTATION</div>
+          <h2>Kisan MR — Phase 2</h2>
+        </div>
+
+        <div class="pdf-project-actions"><a
+            href="https://drive.google.com/file/d/1C3RXBTqrKMoaN2ZQnsdBI0YuukKCetBP/view?usp=sharing"
+            rel="noopener noreferrer" target="_blank">WATCH THE PROTOTYPE ↗</a><a
+            href="https://www.behance.net/gallery/254013493/Kisan-MR-MTP-Phase-2" rel="noopener noreferrer"
+            target="_blank">OPEN IN BEHANCE ↗</a></div>
+      </div>
+      <div class="pdf-loading">LOADING PROJECT DOCUMENTATION…</div>
+      <div class="pdf-pages"></div>
+      <p class="pdf-note">Full project documentation · Scroll to explore</p>
+    </section>
+  </main>
+  <footer class="case-footer"><span>BHOOMIKA HEGDE · PROJECT ARCHIVE</span><a href="../../index.html#work">ALL PROJECTS
+      ↗</a></footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script>
+    (function () {
+      const root = document.querySelector("[data-pdf-url]");
+      if (!root) return;
+      const url = root.getAttribute("data-pdf-url");
+      const pagesEl = root.querySelector(".pdf-pages");
+      const statusEl = root.querySelector(".pdf-loading");
+      const openLink = root.querySelector(".pdf-open-link");
+      if (openLink) openLink.href = url;
+      if (!window.pdfjsLib) {
+        statusEl.textContent = "The document renderer could not load. Please check your internet connection and refresh.";
+        return;
+      }
+      pdfjsLib.GlobalWorkerOptions.workerSrc =
+        "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+
+      function addTileLinks(page, viewport, wrapper, tileTop, tileHeight) {
+        return page.getAnnotations({ intent: "display" }).then(function (annotations) {
+          annotations.forEach(function (annotation) {
+            if (annotation.subtype !== "Link" || !annotation.url || !/^https?:/i.test(annotation.url)) return;
+            const rect = viewport.convertToViewportRectangle(annotation.rect);
+            const left = Math.min(rect[0], rect[2]);
+            const top = Math.min(rect[1], rect[3]);
+            const right = Math.max(rect[0], rect[2]);
+            const bottom = Math.max(rect[1], rect[3]);
+            const clippedTop = Math.max(top, tileTop);
+            const clippedBottom = Math.min(bottom, tileTop + tileHeight);
+            if (right <= left || clippedBottom <= clippedTop) return;
+            const link = document.createElement("a");
+            link.href = annotation.url;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            link.setAttribute("aria-label", "Open linked project resource in a new tab");
+            link.title = "Open linked resource";
+            link.style.cssText = "position:absolute;left:" + left + "px;top:" + (clippedTop - tileTop) +
+              "px;width:" + (right - left) + "px;height:" + (clippedBottom - clippedTop) +
+              "px;z-index:5;display:block;background:transparent;cursor:pointer;";
+            wrapper.appendChild(link);
+          });
+        });
+      }
+
+      pdfjsLib.getDocument({ url: url }).promise.then(async function (pdf) {
+        statusEl.remove();
+        const availableWidth = Math.min(pagesEl.clientWidth, 1000);
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        const maxTileHeight = 1600;
+        for (let pageNo = 1; pageNo <= pdf.numPages; pageNo++) {
+          const page = await pdf.getPage(pageNo);
+          const baseViewport = page.getViewport({ scale: 1 });
+          const scale = availableWidth / baseViewport.width;
+          const viewport = page.getViewport({ scale: scale });
+          // One visual frame per PDF page. Very tall pages are rendered in
+          // technical canvas tiles, but all tiles sit inside the same frame so
+          // the page remains visually continuous with no artificial breaks.
+          const figure = document.createElement("figure");
+          figure.className = "pdf-page";
+          figure.style.position = "relative";
+          figure.style.width = viewport.width + "px";
+          figure.style.height = viewport.height + "px";
+          figure.style.maxWidth = "100%";
+          figure.style.overflow = "hidden";
+          pagesEl.appendChild(figure);
+
+          for (let tileTop = 0; tileTop < viewport.height; tileTop += maxTileHeight) {
+            const tileHeight = Math.min(maxTileHeight, viewport.height - tileTop);
+            const canvas = document.createElement("canvas");
+            const context = canvas.getContext("2d", { alpha: false });
+            canvas.width = Math.ceil(viewport.width * dpr);
+            canvas.height = Math.ceil(tileHeight * dpr);
+            canvas.style.cssText = "position:absolute;left:0;top:" + tileTop +
+              "px;display:block;width:" + viewport.width + "px;height:" + tileHeight + "px;";
+            figure.appendChild(canvas);
+            await page.render({
+              canvasContext: context,
+              viewport: viewport,
+              transform: [dpr, 0, 0, dpr, 0, -tileTop * dpr]
+            }).promise;
+            await addTileLinks(page, viewport, figure, tileTop, tileHeight);
+          }
+        }
+      }).catch(function (error) {
+        console.error("Project PDF rendering failed:", error);
+        statusEl.className = "pdf-error";
+        statusEl.textContent = "Couldn't load this project PDF. Check that the PDF file is present in assets/documents and that its filename matches the slot.";
+      });
+    })();</script>
+</body>
+
+</html>

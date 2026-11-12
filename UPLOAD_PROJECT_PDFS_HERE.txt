@@ -1,0 +1,29 @@
+PROJECT PDFS — HOW TO UPDATE THEM
+
+Your 10 supplied project PDFs are already placed in assets/documents.
+
+To replace or update any project later:
+1. Open the website folder in VS Code.
+2. Open assets > documents.
+3. Replace the relevant PDF with your new PDF.
+4. Keep the exact existing filename (listed below).
+5. Refresh the project page.
+
+PDF filenames:
+- Kriyaa: kriyaa.pdf
+- Kisan MR Phase 2: kisan-mr-mtp-phase-2.pdf
+- Master's Thesis Phase 1: masters-thesis-phase-1.pdf
+- Riddle Rush: riddle-rush.pdf
+- Oxycurv: oxycurv.pdf
+- The Forgotten Village: 3d-world-building.pdf
+- Google Arts & Culture: google-arts-culture.pdf
+- Miles or Cash: miles-or-cash.pdf
+- Comfort Aid: comfort-aid.pdf
+- ShareBite: sharebite.pdf
+- SpeakUp VR: speakup-vr.pdf (not supplied in this update; existing slot retained)
+
+The project pages are normal editable HTML/CSS/JavaScript files.
+The PDFs are separate files, so you can replace them without editing the page code.
+
+Note: The website uses PDF.js from a CDN to display pages inline. An internet connection is required.
+Links embedded in PDFs (such as prototype videos) are restored as clickable areas on the rendered pages.

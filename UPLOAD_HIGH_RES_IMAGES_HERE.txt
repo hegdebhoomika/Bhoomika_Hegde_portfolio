@@ -1,0 +1,40 @@
+BHOOMIKA HEGDE — HIGH-RES IMAGE SLOTS
+
+These are designed project pages with image slots placed directly in the page.
+They are NOT PDF viewers and do not open a separate PDF.
+
+YOUR ONLY TASK:
+Replace the placeholder image files with your own high-resolution JPG images.
+Do not edit HTML or CSS.
+
+HOW TO REPLACE:
+1. Extract the website ZIP.
+2. Open the folder: assets > uploads > [project name].
+3. You will see numbered files such as 01.jpg, 02.jpg, 03.jpg.
+4. Replace each placeholder with your own exported slide/image, using the exact same filename.
+5. Keep the file format as JPG. If your image is PNG, export/save a JPG copy.
+6. Refresh the corresponding project page.
+
+IMAGE ORDER:
+Upload your images in the order you want them to appear on the page.
+For multi-page documentation, export each slide/page as a separate high-resolution image.
+
+PROJECT SLOTS:
+- game-design: 1 slot(s), named 01.jpg to 01.jpg
+- cashormiles-redesign: 1 slot(s), named 01.jpg to 01.jpg
+- kisan-mr-mtp-phase-2: 38 slot(s), named 01.jpg to 38.jpg
+- kriyaa: 1 slot(s), named 01.jpg to 01.jpg
+- oxycurv: 1 slot(s), named 01.jpg to 01.jpg
+- speakup-vr: 23 slot(s), named 01.jpg to 23.jpg
+- masters-thesis-phase-1: 31 slot(s), named 01.jpg to 31.jpg
+- google-arts-culture: 1 slot(s), named 01.jpg to 01.jpg
+- 3d-world-building: 1 slot(s), named 01.jpg to 01.jpg
+- sharebite: 1 slot(s), named 01.jpg to 01.jpg
+- comfort-aid: 1 slot(s), named 01.jpg to 01.jpg
+
+IMPORTANT:
+- Homepage project thumbnails are separate and remain unchanged.
+- The project pages already contain the layout, typography, spacing and image positions.
+- Your high-resolution images will be shown directly in that layout.
+- This is a static website, so the upload means replacing image files in the website folder, not uploading through a public web form.
+- Keep a backup of the ZIP before making replacements.
