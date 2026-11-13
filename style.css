@@ -183,7 +183,7 @@ a {
   width: 100%;
   height: clamp(440px, 66vh, 650px);
   overflow: hidden;
-  border-radius: 48% 48% 7px 7px;
+  border-radius: 10px;
   background: #e4e2df;
 }
 
@@ -260,7 +260,7 @@ a {
 
 .project-card {
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 0;
   overflow: hidden;
   display: flex;
   flex-direction: column;
