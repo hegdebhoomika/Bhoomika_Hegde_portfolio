@@ -1047,7 +1047,7 @@ a {
     height: auto;
     aspect-ratio: .78;
     min-height: 0;
-    border-radius: 48% 48% 6px 6px;
+    border-radius: 0;
   }
 
   .portrait-image {
