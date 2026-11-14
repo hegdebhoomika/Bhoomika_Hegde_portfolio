@@ -955,9 +955,9 @@ a {
     padding-top: 48px
   }
 
-  .contact h2 {
-    font-size: clamp(54px, 14vw, 78px)
-  }
+.contact h2 {
+  font-size: clamp(14px, 10vw, 28px);
+}
 
   .contact-links {
     margin-bottom: 42px
