@@ -412,9 +412,30 @@
               viewport: viewport,
               transform: [dpr, 0, 0, dpr, 0, -tileTop * dpr]
             }).promise;
+            // Make "Video Prototype" text clickable
+const textContent = await page.getTextContent();
+
+textContent.items.forEach(item => {
+    if (item.str.trim() === "Video Prototype") {
+        const link = document.createElement("a");
+
+        link.href = "https://drive.google.com/file/d/1bcQ7eMSPlgtnqVjbYC2lNFUoVDcVkXI5/view?usp=sharing";
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.style.position = "absolute";
+        link.style.left = (viewport.convertToViewportPoint(item.transform[4], item.transform[5])[0]) + "px";
+        link.style.top = (viewport.convertToViewportPoint(item.transform[4], item.transform[5])[1] - 25) + "px";
+        link.style.width = "260px";
+        link.style.height = "40px";
+        link.style.zIndex = "10";
+
+        figure.appendChild(link);
+    }
+});
             await addTileLinks(page, viewport, figure, tileTop, tileHeight);
-          }
-        }
+          await addTileLinks(page, viewport, figure, tileTop, tileHeight);
+}
+}
       }).catch(function (error) {
         console.error("Project PDF rendering failed:", error);
         statusEl.className = "pdf-error";
