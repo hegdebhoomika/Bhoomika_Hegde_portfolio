@@ -413,6 +413,32 @@
               viewport: viewport,
               transform: [dpr, 0, 0, dpr, 0, -tileTop * dpr]
             }).promise;
+            // Make the YouTube URL inside the PDF clickable
+const textContent = await page.getTextContent();
+
+textContent.items.forEach(item => {
+    if (item.str.includes("youtu.be")) {
+        const link = document.createElement("a");
+
+        link.href = item.str.trim();
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+
+        const position = viewport.convertToViewportPoint(
+            item.transform[4],
+            item.transform[5]
+        );
+
+        link.style.position = "absolute";
+        link.style.left = position[0] + "px";
+        link.style.top = (position[1] - 20) + "px";
+        link.style.width = (item.width * viewport.scale) + "px";
+        link.style.height = "30px";
+        link.style.zIndex = "10";
+
+        figure.appendChild(link);
+    }
+});
             await addTileLinks(page, viewport, figure, tileTop, tileHeight);
           }
         }
