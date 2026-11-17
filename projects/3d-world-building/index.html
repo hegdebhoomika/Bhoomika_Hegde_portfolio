@@ -420,7 +420,7 @@ textContent.items.forEach(item => {
     if (item.str.includes("youtu.be")) {
         const link = document.createElement("a");
 
-        link.href = item.str.trim();
+        link.href = "https://youtu.be/jUbIHZcVGRg?si=o8E0rx2gECyTpV0P";
         link.target = "_blank";
         link.rel = "noopener noreferrer";
 
@@ -431,10 +431,11 @@ textContent.items.forEach(item => {
 
         link.style.position = "absolute";
         link.style.left = position[0] + "px";
-        link.style.top = (position[1] - 20) + "px";
+        link.style.top = (position[1] - 18) + "px";
         link.style.width = (item.width * viewport.scale) + "px";
-        link.style.height = "30px";
-        link.style.zIndex = "10";
+        link.style.height = "28px";
+        link.style.zIndex = "20";
+        link.style.cursor = "pointer";
 
         figure.appendChild(link);
     }
